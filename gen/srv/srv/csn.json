@@ -1,0 +1,97 @@
+{
+  "namespace": "bookshop.db",
+  "definitions": {
+    "bookshop.db.booksData": {
+      "kind": "entity",
+      "elements": {
+        "title": {
+          "@title": "Title",
+          "key": true,
+          "type": "cds.String"
+        },
+        "author": {
+          "@title": "Author",
+          "type": "cds.String"
+        },
+        "image_url": {
+          "@title": "Image_URL",
+          "type": "cds.String"
+        },
+        "description": {
+          "@title": "Description",
+          "type": "cds.String"
+        },
+        "rating": {
+          "@title": "Rating",
+          "type": "cds.Int32"
+        },
+        "price": {
+          "@title": "Price",
+          "type": "cds.Int32"
+        },
+        "review": {
+          "@title": "Review",
+          "type": "cds.String"
+        },
+        "type": {
+          "@title": "Type",
+          "type": "cds.String"
+        }
+      }
+    },
+    "MyService": {
+      "@source": "srv/dataservice.cds",
+      "kind": "service"
+    },
+    "MyService.booksData": {
+      "kind": "entity",
+      "projection": {
+        "from": {
+          "ref": [
+            "bookshop.db.booksData"
+          ]
+        }
+      },
+      "elements": {
+        "title": {
+          "@title": "Title",
+          "key": true,
+          "type": "cds.String"
+        },
+        "author": {
+          "@title": "Author",
+          "type": "cds.String"
+        },
+        "image_url": {
+          "@title": "Image_URL",
+          "type": "cds.String"
+        },
+        "description": {
+          "@title": "Description",
+          "type": "cds.String"
+        },
+        "rating": {
+          "@title": "Rating",
+          "type": "cds.Int32"
+        },
+        "price": {
+          "@title": "Price",
+          "type": "cds.Int32"
+        },
+        "review": {
+          "@title": "Review",
+          "type": "cds.String"
+        },
+        "type": {
+          "@title": "Type",
+          "type": "cds.String"
+        }
+      }
+    }
+  },
+  "meta": {
+    "creator": "CDS Compiler v5.6.0",
+    "flavor": "inferred"
+  },
+  "$version": "2.0"
+}

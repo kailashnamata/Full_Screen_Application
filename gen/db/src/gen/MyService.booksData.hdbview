@@ -1,0 +1,10 @@
+VIEW MyService_booksData AS SELECT
+  booksData_0.title,
+  booksData_0.author,
+  booksData_0.image_url,
+  booksData_0.description,
+  booksData_0.rating,
+  booksData_0.price,
+  booksData_0.review,
+  booksData_0.type
+FROM bookshop_db_booksData AS booksData_0

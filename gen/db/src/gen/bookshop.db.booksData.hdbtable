@@ -1,0 +1,11 @@
+COLUMN TABLE bookshop_db_booksData (
+  title NVARCHAR(5000) NOT NULL,
+  author NVARCHAR(5000),
+  image_url NVARCHAR(5000),
+  description NVARCHAR(5000),
+  rating INTEGER,
+  price INTEGER,
+  review NVARCHAR(5000),
+  type NVARCHAR(5000),
+  PRIMARY KEY(title)
+)

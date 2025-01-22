@@ -1,0 +1,39 @@
+{
+  "format_version": 1,
+  "imports": [
+    {
+      "target_table": "BOOKSHOP_DB_BOOKSDATA",
+      "source_data": {
+        "data_type": "CSV",
+        "file_name": "bookshop.db.booksData.csv",
+        "has_header": true,
+        "type_config": {
+          "delimiter": ","
+        }
+      },
+      "import_settings": {
+        "import_columns": [
+          "TITLE",
+          "AUTHOR",
+          "IMAGE_URL",
+          "DESCRIPTION",
+          "RATING",
+          "PRICE",
+          "REVIEW",
+          "TYPE"
+        ],
+        "include_filter": []
+      },
+      "column_mappings": {
+        "TITLE": "title",
+        "AUTHOR": "author",
+        "IMAGE_URL": "image_url",
+        "DESCRIPTION": "description",
+        "RATING": "rating",
+        "PRICE": "price",
+        "REVIEW": "review",
+        "TYPE": "type"
+      }
+    }
+  ]
+}
